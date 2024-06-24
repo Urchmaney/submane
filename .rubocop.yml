@@ -5,7 +5,7 @@ AllCops:
   - "test/dummy/config/**/*"
   - "Guardfile"
   - "Rakefile"
-  - vendor/**/*.rb
+  - vendor/bundle/**/*
   TargetRubyVersion: 3.0
 
 Style/StringLiterals:
