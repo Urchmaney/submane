@@ -11,4 +11,4 @@ require "rubocop/rake_task"
 
 RuboCop::RakeTask.new
 
-task default: %i[app:db:create app:db:migrate app:test rubocop]
+task default: %i[rubocop app:db:migrate app:test]

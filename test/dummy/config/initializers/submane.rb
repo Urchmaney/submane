@@ -1,5 +1,5 @@
-Rails.configuration.after_initialize do
+Rails.configuration.before_initialize do
   Submane.configuration do |config|
-    config.account_class_name = User
+    config.account_class_name = "User"
   end
 end
