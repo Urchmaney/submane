@@ -1,0 +1,24 @@
+AllCops:
+  Exclude:
+  - "test/dummy/db/**/*"
+  - "test/dummy/bin/*" 
+  - "test/dummy/config/**/*"
+  - "Guardfile"
+  - "Rakefile"
+  - vendor/bundle/**/*
+  TargetRubyVersion: 3.0
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Metrics/BlockLength:
+  AllowedMethods: ['describe']
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
