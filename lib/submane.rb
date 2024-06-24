@@ -7,8 +7,12 @@ module Submane
   config_accessor :account_class_name
 
   class << self
-    def configuration
-      yield config
+    def configuration(&block)
+      return unless const_defined? Rails.to_s
+
+      Rails.configuration.before_initialize do
+        block.call config
+      end
     end
 
     def account_class_name_sym
