@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.summary     = "Rails Gem for subscription management."
   spec.description = "Rails Gem for subscription management."
   spec.license     = "MIT"
+  spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/Urchmaney/submane"
