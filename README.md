@@ -21,6 +21,11 @@ Or install it yourself as:
 $ gem install submane
 ```
 
+We then run the following command to add submane config file to your initializers
+```bash
+$ bin/rails generate submane:config
+```
+
 ## Contributing
 Contribution directions go here.
 
