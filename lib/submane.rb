@@ -20,3 +20,7 @@ module Submane
     end
   end
 end
+
+ActiveSupport.on_load(:active_record) do
+  include Submane::Models
+end

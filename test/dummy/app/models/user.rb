@@ -1,1 +1,3 @@
-class User < ApplicationRecord; end
+class User < ApplicationRecord
+  setup_submane
+end
