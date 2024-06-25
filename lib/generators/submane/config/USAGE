@@ -1,0 +1,8 @@
+Description:
+    Creates initializer config file for Submane Gem
+
+Example:
+    bin/rails generate submane:config
+
+    This will create:
+        config/initializers/submane.rb
