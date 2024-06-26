@@ -1,3 +1,4 @@
+# This migration comes from submane (originally 20240623161156)
 class CreateSubscription < ActiveRecord::Migration[7.1]
   def change
     create_table :submane_subscriptions do |t|
