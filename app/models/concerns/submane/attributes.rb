@@ -3,6 +3,8 @@ module Submane
     extend ActiveSupport::Concern
 
     included do
+      def create_subscription; end
+
       def active_plan; end
 
       def active_plan?; end

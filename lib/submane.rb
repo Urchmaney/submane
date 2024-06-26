@@ -1,8 +1,10 @@
 require "submane/version"
 require "submane/engine"
+require "submane/attributes"
 
 module Submane
   include ActiveSupport::Configurable
+  extend Attributes
 
   config_accessor :account_class_name
 
