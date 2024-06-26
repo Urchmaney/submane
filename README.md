@@ -51,6 +51,10 @@ Check if account has active plan
 ```ruby
 account.has_active_plan?
 ```
+Create Plans
+```ruby
+  Submane.create_plan(name: "", price: "", visual_order: 1)
+```
 
 ### Subscription
 Get all subscriptions
