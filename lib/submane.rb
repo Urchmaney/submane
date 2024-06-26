@@ -1,6 +1,6 @@
 require "submane/version"
 require "submane/engine"
-require"submane/attributes"
+require "submane/attributes"
 
 module Submane
   include ActiveSupport::Configurable
