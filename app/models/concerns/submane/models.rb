@@ -5,7 +5,7 @@ module Submane
     class_methods do
       def setup_submane
         has_many :subscriptions, class_name: "Submane::Subscription"
-        include Submane::Attributes
+        include Submane::ModelAttributes
       end
     end
   end

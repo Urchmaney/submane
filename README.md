@@ -63,7 +63,7 @@ account.subscriptions
 ```
 Get all active Subscriptions for a plan
 ```ruby
-Submane.plan_active_subscriptions {plan_id}
+Submane.plan_active_subscriptions({plan_id})
 ```
 Get active subscription
 ```ruby
