@@ -24,7 +24,7 @@ We then run the following command to add submane config file to your initializer
 $ bin/rails generate submane:config
 ```
 
-Finally, we can the class that subscriptions will be attached to.
+Finally, we can ser the class that subscriptions will be attached to.
 Assuming "Account" class will hold the subscriptions, then we set is as the following string,
 ```ruby
 
