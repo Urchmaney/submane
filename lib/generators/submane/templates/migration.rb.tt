@@ -1,0 +1,19 @@
+class <%= migration_class_name %> < ActiveRecord::Migration<%= migration_version %>
+  def change
+    create_table :submane_plans do |t|
+      t.string :name
+      t.integer :price
+      t.integer :visual_order, index: { unique: true }
+
+      t.timestamps
+    end
+
+    create_table :submane_subscriptions do |t|
+      t.references :submane_plan
+      t.references :client
+      t.datetime :end_date, null: false
+
+      t.timestamps
+    end
+  end
+end
