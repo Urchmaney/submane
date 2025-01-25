@@ -1,0 +1,9 @@
+Description:
+  Creates migration and initializer config files for Submane
+
+Example:
+  bin/rails generate submane:install
+
+  This will create:
+    config/initializers/submane.rb
+    db/migrate/{timestamp}_install_submane.rb

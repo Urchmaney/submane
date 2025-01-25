@@ -14,24 +14,20 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
+Or install it with bundle install:
 ```bash
-$ gem install submane
+$ bundle install submane
 ```
 
-We then run the following command to add submane config file to your initializers
+We then run the following command to add migrations and config yml file
 ```bash
-$ bin/rails generate submane:config
+$ bin/rails generate submane:install
 ```
 
-Finally, we can ser the class that subscriptions will be attached to.
-Assuming "Account" class will hold the subscriptions, then we set is as the following string,
+Finally, we can add the class that subscriptions will be attached to.
+Assuming "Account" class will hold the subscriptions, then we set is as the following string in `config/submane.yml`
 ```ruby
-
-Submane.configuration do |config|
-  config.account_class_name = "Account"
-end
-
+account_class: Account
 ```
 
 ## Usage

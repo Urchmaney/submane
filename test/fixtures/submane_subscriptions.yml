@@ -1,0 +1,4 @@
+david_subscription:
+  client: david
+  plan: basic
+  end_date: <%= Time.new + 3.months %>
