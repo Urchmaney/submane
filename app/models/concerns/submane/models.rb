@@ -4,7 +4,7 @@ module Submane
 
     class_methods do
       def setup_submane
-        has_many :subscriptions, class_name: "Submane::Subscription"
+        has_many :subscriptions, class_name: "Submane::Subscription", foreign_key: "client_id"
         include Submane::ModelAttributes
       end
     end

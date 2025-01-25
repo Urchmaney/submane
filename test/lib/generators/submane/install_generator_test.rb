@@ -9,7 +9,7 @@ module Submane
 
     test "generator creates config initializer" do
       run_generator ["submane:install"]
-      assert_file "config/initializers/submane.rb"
+      assert_file "config/submane.yml"
     end
 
     test "generator creates migration_file" do

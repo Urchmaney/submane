@@ -13,3 +13,10 @@ if ActiveSupport::TestCase.respond_to?(:fixture_paths=)
   ActiveSupport::TestCase.file_fixture_path = "#{File.expand_path("fixtures", __dir__)}/files"
   ActiveSupport::TestCase.fixtures :all
 end
+
+module ActiveSupport
+  class TestCase
+    set_fixture_class submane_subscriptions: Submane::Subscription
+    set_fixture_class submane_plans: Submane::Plan
+  end
+end

@@ -1,4 +1,4 @@
-class <%= migration_class_name %> < ActiveRecord::Migration<%= migration_version %>
+class InstallSubmane < ActiveRecord::Migration[7.1]
   def change
     create_table :submane_plans do |t|
       t.string :name

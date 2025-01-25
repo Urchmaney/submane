@@ -1,5 +1,5 @@
-class <%= migration_class_name %> < ActiveRecord::Migration<%= migration_version %>
-  def change
+class InstallSubmane < ActiveRecord::Migration[7.1]
+  def change # rubocop:disable Metrics/MethodLength
     create_table :submane_plans do |t|
       t.string :name
       t.integer :price

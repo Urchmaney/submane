@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_24_123342) do
+ActiveRecord::Schema[7.1].define(version: 2025_01_25_140439) do
   create_table "submane_plans", force: :cascade do |t|
     t.string "name"
     t.integer "price"
@@ -21,13 +21,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_24_123342) do
   end
 
   create_table "submane_subscriptions", force: :cascade do |t|
-    t.integer "submane_plan_id", null: false
-    t.integer "user_id", null: false
+    t.integer "plan_id"
+    t.integer "client_id"
     t.datetime "end_date", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["submane_plan_id"], name: "index_submane_subscriptions_on_submane_plan_id"
-    t.index ["user_id"], name: "index_submane_subscriptions_on_user_id"
+    t.index ["client_id"], name: "index_submane_subscriptions_on_client_id"
+    t.index ["plan_id"], name: "index_submane_subscriptions_on_plan_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -37,6 +37,4 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_24_123342) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "submane_subscriptions", "submane_plans"
-  add_foreign_key "submane_subscriptions", "users"
 end

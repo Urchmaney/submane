@@ -10,8 +10,8 @@ module Submane
         migration_template "migration.rb", "db/migrate/install_submane.rb", migration_version: migration_version
       end
 
-      def copy_initializer_config
-        copy_file "config.rb", "config/initializers/submane.rb"
+      def copy_config
+        template "config.yml", "config/submane.yml"
       end
 
       private

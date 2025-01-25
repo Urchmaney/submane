@@ -1,0 +1,9 @@
+basic:
+  name: basic
+  price: 50
+  visual_order: 1
+
+advance:
+  name: advance
+  price: 100
+  visual_order: 2
