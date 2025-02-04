@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Unegbu Kingsley"]
   spec.email       = ["kingsobino@gmail.com"]
   spec.homepage    = "https://github.com/Urchmaney/submane"
-  spec.summary     = "Rails Gem for subscription management."
-  spec.description = "Rails Gem for subscription management."
+  spec.summary     = "Subscription management gem for rails."
+  spec.description = "Subscription management gem for rails."
   spec.license     = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
