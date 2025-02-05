@@ -1,20 +1,18 @@
 module Submane
   class PlansController < ApplicationController
-    before_action :set_plan, only: %i[ show edit update destroy ]
+    before_action :set_plan, only: %i[show edit update destroy]
 
     def index
       @plans = Plan.all
     end
 
-    def show
-    end
+    def show; end
 
     def new
       @plan = Plan.new
     end
-  
-    def edit 
-    end
+
+    def edit; end
 
     def create
       @plan = Plan.new(plan_params)
@@ -40,12 +38,13 @@ module Submane
     end
 
     private
+
       def set_plan
         @plan = Plan.find(params[:id])
       end
 
       def plan_params
-        params.require(:plan).permit([:name, :price, :visual_order])
+        params.require(:plan).permit(%i[name price visual_order])
       end
   end
 end
