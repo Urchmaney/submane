@@ -39,12 +39,12 @@ module Submane
 
     private
 
-      def set_plan
-        @plan = Plan.find(params[:id])
-      end
+    def set_plan
+      @plan = Plan.find(params[:id])
+    end
 
-      def plan_params
-        params.require(:plan).permit(%i[name price visual_order])
-      end
+    def plan_params
+      params.require(:plan).permit(%i[name price visual_order])
+    end
   end
 end
