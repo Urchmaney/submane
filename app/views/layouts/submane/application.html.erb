@@ -5,11 +5,14 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag    "submane/application", media: "all" %>
+  <%= favicon_link_tag "submane/favicon.ico" %>
+  <%= stylesheet_link_tag "submane/application", media: "all" %>
 </head>
 <body>
+  <main class="container mx-auto mt-28 px-5 flex">
+    <%= yield %>
+  </main>
 
-<%= yield %>
 
 </body>
 </html>
