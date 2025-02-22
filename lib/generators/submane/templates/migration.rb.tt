@@ -10,7 +10,7 @@ class <%= migration_class_name %> < ActiveRecord::Migration<%= migration_version
 
     create_table :submane_subscriptions do |t|
       t.references :plan
-      t.references :client
+      t.references :subscriber
       t.datetime :end_date, null: false
 
       t.timestamps

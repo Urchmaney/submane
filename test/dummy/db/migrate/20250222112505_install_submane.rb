@@ -10,7 +10,7 @@ class InstallSubmane < ActiveRecord::Migration[7.1]
 
     create_table :submane_subscriptions do |t|
       t.references :plan
-      t.references :client
+      t.references :subscriber
       t.datetime :end_date, null: false
 
       t.timestamps

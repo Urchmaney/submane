@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_01_25_140439) do
+ActiveRecord::Schema[7.1].define(version: 2025_02_22_112505) do
   create_table "submane_plans", force: :cascade do |t|
     t.string "name"
     t.integer "price"
@@ -22,12 +22,12 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_25_140439) do
 
   create_table "submane_subscriptions", force: :cascade do |t|
     t.integer "plan_id"
-    t.integer "client_id"
+    t.integer "subscriber_id"
     t.datetime "end_date", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["client_id"], name: "index_submane_subscriptions_on_client_id"
     t.index ["plan_id"], name: "index_submane_subscriptions_on_plan_id"
+    t.index ["subscriber_id"], name: "index_submane_subscriptions_on_subscriber_id"
   end
 
   create_table "users", force: :cascade do |t|
