@@ -8,3 +8,11 @@
 
   <%= button_to "Destroy this plan", @plan, method: :delete %>
 </div>
+
+<div>
+  <% @subscribers.each do |subscriber| %>
+    <div>
+      <%= subscriber.name %>
+    </div>
+  <% end %>
+</div>

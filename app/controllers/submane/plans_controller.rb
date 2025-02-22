@@ -6,7 +6,9 @@ module Submane
       @plans = Plan.all
     end
 
-    def show; end
+    def show
+      @subscribers = @plan.subscribers
+    end
 
     def new
       @plan = Plan.new

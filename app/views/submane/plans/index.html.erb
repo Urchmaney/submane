@@ -2,12 +2,14 @@
 
 <h1>Plans</h1>
 
-<div id="plans">
+<div id="plans" class="flex">
   <% @plans.each do |plan| %>
-    <%= render plan %>
-    <p>
-      <%= link_to "Show this plan", plan %>
-    </p>
+    <div>
+      <%= render plan %>
+       <div class="">
+          <button class="btn btn-primary text-[18px]"><%= link_to "Show this plan", plan %></button>
+      </div>
+    </div>
   <% end %>
 </div>
 
