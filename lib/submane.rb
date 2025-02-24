@@ -5,8 +5,6 @@ require "submane/attributes"
 module Submane
   extend Attributes
 
-  # config_accessor :account_class
-
   def self.config
     @config ||= begin
       path = Rails.root.join("config", "submane.yml").to_s
@@ -28,5 +26,5 @@ module Submane
 end
 
 ActiveSupport.on_load(:active_record) do
-  include Submane::Models
+  extend Submane::Model
 end
