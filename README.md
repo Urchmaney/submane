@@ -1,5 +1,5 @@
 # Submane
-A rails gem for subscription management.
+A rails engine for subscription management.
 
 
 ## Installation
